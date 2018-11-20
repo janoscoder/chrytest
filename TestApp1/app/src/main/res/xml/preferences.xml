@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+            android:defaultValue="false"
+            android:title="son" android:key="switch_pref_enable_sound"
+            android:id="@+id/switch_pref_enable_sound"
+            android:summary="active/désactive le son"
+            android:switchTextOn="un son sera joué quand le bébé effectue une action"
+            android:switchTextOff="son désactivé"/>
+    <ListPreference
+            android:defaultValue="1"
+            android:title="Sexe" android:entries="@array/list_preference_entries"
+            android:entryValues="@array/list_preference_entries" android:key="gender"/>
+</PreferenceScreen>
