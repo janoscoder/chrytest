@@ -44,8 +44,5 @@
             app:layout_anchor="@id/app_bar"
             app:layout_anchorGravity="bottom|end"
             app:srcCompat="@android:drawable/ic_dialog_email"/>
-    <SeekBar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/seekBar"/>
 
 </android.support.design.widget.CoordinatorLayout>
