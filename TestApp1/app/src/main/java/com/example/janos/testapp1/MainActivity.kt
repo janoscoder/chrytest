@@ -16,8 +16,8 @@ class MainActivity : AppCompatActivity() {
         //setSupportActionBar(findViewById(R.id.my_toolbar))
     }
     fun onBtnActChoice(view: View){
-        val myToast = Toast.makeText(this,"T'as clic!", Toast.LENGTH_SHORT)
-        myToast.show()
+        //val myToast = Toast.makeText(this,"onBtnActChoice", Toast.LENGTH_SHORT)
+        //myToast.show()
         startActivity(Intent(this, SettingsActivity::class.java))
 
     }
