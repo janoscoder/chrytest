@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Toast
 
 import com.example.janos.testapp1.SettingsActivity
+import com.example.janos.testapp1.ChoiceActivitySettings
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,5 +21,8 @@ class MainActivity : AppCompatActivity() {
         //myToast.show()
         startActivity(Intent(this, SettingsActivity::class.java))
 
+    }
+    fun onBtnActChoiceSettings(view: View){
+        startActivity(Intent(this, ChoiceActivitySettings::class.java))
     }
 }

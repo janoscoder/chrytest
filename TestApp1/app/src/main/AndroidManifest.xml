@@ -24,6 +24,15 @@
                     android:name="android.support.PARENT_ACTIVITY"
                     android:value="com.example.janos.testapp1.MainActivity"/>
         </activity>
+        <activity
+                android:name=".ChoiceActivitySettings"
+                android:label="@string/title_activity_choice_settings"
+                android:parentActivityName=".MainActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.example.janos.testapp1.MainActivity"/>
+        </activity>
     </application>
 
 </manifest>
