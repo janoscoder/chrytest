@@ -9,7 +9,7 @@
 
     <header
             android:fragment="com.example.janos.testapp1.SettingsActivity$NotificationPreferenceFragment"
-            android:title="@string/pref_header_notifications"
+            android:title="@string/pref_header_act_choix"
             android:icon="@drawable/ic_notifications_black_24dp"/>
 
     <header
