@@ -68,11 +68,11 @@
     <!-- Example settings for Notifications -->
     <string name="pref_header_act_choix">Paramètres activité de choix</string>
 
-    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <string name="pref_title_auditory_stimulation">Stimulation auditive</string>
 
-    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_title_auditory_stimulation_type">Type de stimulation auditive</string>
     <string name="pref_ringtone_silent">Silent</string>
 
-    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="pref_title_vibrate">Vibrations</string>
     <string name="configuration">configuration</string>
 </resources>

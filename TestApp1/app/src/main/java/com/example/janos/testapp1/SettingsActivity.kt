@@ -72,6 +72,7 @@ class SettingsActivity : AppCompatPreferenceActivity() {
      * This method stops fragment injection in malicious applications.
      * Make sure to deny any unknown fragments here.
      */
+    //TODO: replace PreferenceFragment by PreferenceFragmentCompat
     override fun isValidFragment(fragmentName: String): Boolean {
         return PreferenceFragment::class.java.name == fragmentName
                 || GeneralPreferenceFragment::class.java.name == fragmentName
