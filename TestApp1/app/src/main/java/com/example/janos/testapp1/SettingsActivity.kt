@@ -76,7 +76,7 @@ class SettingsActivity : AppCompatPreferenceActivity() {
         return PreferenceFragment::class.java.name == fragmentName
                 || GeneralPreferenceFragment::class.java.name == fragmentName
                 || DataSyncPreferenceFragment::class.java.name == fragmentName
-                || NotificationPreferenceFragment::class.java.name == fragmentName
+                || ActChoicePreferenceFragment::class.java.name == fragmentName
     }
 
     /**
@@ -113,10 +113,10 @@ class SettingsActivity : AppCompatPreferenceActivity() {
      * activity is showing a two-pane settings UI.
      */
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    class NotificationPreferenceFragment : PreferenceFragment() {
+    class ActChoicePreferenceFragment : PreferenceFragment() {
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
-            addPreferencesFromResource(R.xml.pref_notification)
+            addPreferencesFromResource(R.xml.pref_act_choice)
             setHasOptionsMenu(true)
 
             // Bind the summaries of EditText/List/Dialog/Ringtone preferences
