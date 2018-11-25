@@ -24,10 +24,9 @@ class MainActivity : AppCompatActivity() {
         return true
     }
     fun onBtnActChoice(view: View){
-        val myToast = Toast.makeText(this,"onBtnActChoice", Toast.LENGTH_SHORT)
-        //TODO: créer l'activité de choix
-        myToast.show()
-        //startActivity(Intent(this, SettingsActivity::class.java))
+        //val myToast = Toast.makeText(this,"onBtnActChoice", Toast.LENGTH_SHORT)
+        //myToast.show()
+        startActivity(Intent(this, ChoiceActivity::class.java))
 
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

@@ -75,4 +75,8 @@
 
     <string name="pref_title_vibrate">Vibrations</string>
     <string name="configuration">configuration</string>
+
+    <string name="title_activity_choice">Activité de choix</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

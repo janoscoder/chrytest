@@ -24,6 +24,16 @@
                     android:name="android.support.PARENT_ACTIVITY"
                     android:value="com.example.janos.testapp1.MainActivity"/>
         </activity>
+        <activity
+                android:name=".ChoiceActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/title_activity_choice"
+                android:parentActivityName=".MainActivity"
+                android:theme="@style/FullscreenTheme">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.example.janos.testapp1.MainActivity"/>
+        </activity>
     </application>
 
 </manifest>
