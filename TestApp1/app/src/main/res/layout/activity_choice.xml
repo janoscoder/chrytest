@@ -3,7 +3,7 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             android:background="#0099cc"
+             android:background="@color/col_act_choice_background"
              tools:context=".ChoiceActivity">
 
     <!-- The primary full-screen view. This can be replaced with whatever view
@@ -34,14 +34,20 @@
                       android:orientation="horizontal"
                       tools:ignore="UselessParent">
 
+            <!--
             <Button android:id="@+id/dummy_button"
                     style="?metaButtonBarButtonStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/dummy_button"/>
-
+-->
         </LinearLayout>
+        <Button
+                android:text="Button1"
+                android:layout_width="242dp"
+                android:layout_height="wrap_content" android:id="@+id/button_left"
+                style="@style/Widget.AppCompat.Button.Colored"/>
     </FrameLayout>
 
 </FrameLayout>
