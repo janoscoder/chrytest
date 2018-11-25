@@ -67,8 +67,10 @@ class ChoiceActivity : AppCompatActivity() {
         //val layoutParams = LinearLayoutParams(150, 150);
         //layoutParams.setMargins(int left, int top, int right, int bottom);
         //imageView.setLayoutParams(layoutParams);
-        button_left.x = 150f
-        button_right.x = 650f
+
+        //button_left.x = 150f
+        //button_right.x = 650f
+        button_left.width = 100
     }
 
     override fun onPostCreate(savedInstanceState: Bundle?) {

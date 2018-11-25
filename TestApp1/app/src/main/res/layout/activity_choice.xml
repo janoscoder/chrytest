@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              android:background="@color/col_act_choice_background"
@@ -17,7 +17,7 @@
               android:textStyle="bold"
               android:textSize="50sp"
               android:gravity="center"
-    />
+              android:text="TEST ACT CHOIX"/>
 
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
@@ -43,14 +43,29 @@
                     android:text="@string/dummy_button"/>
 -->
         </LinearLayout>
-        <Button
-                android:layout_width="252dp"
-                android:layout_height="252dp" android:id="@+id/button_left"
-                style="@style/Widget.AppCompat.Button.Colored" android:backgroundTint="@color/colorAccent"/>
-        <Button
-                android:layout_width="252dp"
-                android:layout_height="252dp" android:id="@+id/button_right"
-                style="@style/Widget.AppCompat.Button.Colored" android:backgroundTint="@color/colorPrimaryDark"/>
     </FrameLayout>
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <Button
+                android:layout_width="252dp"
+                android:layout_height="252dp"
+                android:id="@+id/button_left"
+                style="@style/Widget.AppCompat.Button.Colored" android:backgroundTint="@color/colorAccent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toStartOf="@+id/button_right"
+                app:layout_constraintVertical_bias="0.78" app:layout_constraintHorizontal_chainStyle="spread"/>
+        <Button
+                android:layout_width="252dp"
+                android:layout_height="252dp"
+                android:id="@+id/button_right"
+                style="@style/Widget.AppCompat.Button.Colored" android:backgroundTint="@color/colorPrimaryDark"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/button_left"
+                app:layout_constraintVertical_bias="0.78"/>
+    </android.support.constraint.ConstraintLayout>
 
 </FrameLayout>
