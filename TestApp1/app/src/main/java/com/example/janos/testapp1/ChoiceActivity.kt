@@ -62,7 +62,13 @@ class ChoiceActivity : AppCompatActivity() {
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
         //dummy_button.setOnTouchListener(mDelayHideTouchListener)
-        button_left.offsetLeftAndRight(100)
+
+        //button_left.offsetLeftAndRight(100)
+        //val layoutParams = LinearLayoutParams(150, 150);
+        //layoutParams.setMargins(int left, int top, int right, int bottom);
+        //imageView.setLayoutParams(layoutParams);
+        button_left.x = 150f
+        button_right.x = 650f
     }
 
     override fun onPostCreate(savedInstanceState: Bundle?) {

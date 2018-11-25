@@ -17,7 +17,7 @@
               android:textStyle="bold"
               android:textSize="50sp"
               android:gravity="center"
-              android:text="@string/dummy_content"/>
+    />
 
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
@@ -44,10 +44,13 @@
 -->
         </LinearLayout>
         <Button
-                android:text="Button1"
-                android:layout_width="242dp"
-                android:layout_height="wrap_content" android:id="@+id/button_left"
-                style="@style/Widget.AppCompat.Button.Colored"/>
+                android:layout_width="252dp"
+                android:layout_height="252dp" android:id="@+id/button_left"
+                style="@style/Widget.AppCompat.Button.Colored" android:backgroundTint="@color/colorAccent"/>
+        <Button
+                android:layout_width="252dp"
+                android:layout_height="252dp" android:id="@+id/button_right"
+                style="@style/Widget.AppCompat.Button.Colored" android:backgroundTint="@color/colorPrimaryDark"/>
     </FrameLayout>
 
 </FrameLayout>
